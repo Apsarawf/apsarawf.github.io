@@ -63,7 +63,6 @@ body{
 }
 .mid_1{
 	width: 20rem/* 1080px */;
-	height: 9.11111111rem/* 492px */;
 	background: #fff;
 	margin-top: .40740741rem/* 22px */;
 	border-bottom: 1px solid #f5f5f5;
@@ -81,17 +80,21 @@ body{
 	font-family: "NotoSansHans Regular";
 	margin-left: .66666667rem/* 36px */;
 }
+.active{
+	height: 4.44444444rem/* 240px */;
+	overflow: hidden;
+}
 .mid_1 img{
 	width: .62962963rem/* 34px */;
 	height: .33333333rem/* 18px */;
 	margin: .66666667rem/* 36px */ auto;
 	display: block;
+	padding-bottom: .37037037rem/* 20px */;
 }
 .mid_2{
 	width: 20rem/* 1080px */;
 	height: 9.44444444rem/* 510px */;
 	background: #fff;
-	display: none;
 }
 .mid_2 li{
 	height: .96296296rem/* 52px */;
