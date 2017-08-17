@@ -1,4 +1,7 @@
 $ (function(){
+	var $tel = $('.bottom_p1 > span').html();
+	$(".bottom > a").attr("href","tel:"+$tel);
+	
 	$('.pull-down').bind("touchend",function(){
 		if($(this).prev().hasClass("active")){
 			$(this).attr("src","imgs/mid_1.png");
