@@ -1,5 +1,5 @@
 $ (function(){
-	var $tel = $('.bottom_p1 > span').html();
+	var $tel = $('.bottom_p1 > span').text();
 	$(".bottom > a").attr("href","tel:"+$tel);
 	
 	$('.pull-down').bind("touchend",function(){
