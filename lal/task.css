@@ -84,12 +84,15 @@ body{
 	height: 4.44444444rem/* 240px */;
 	overflow: hidden;
 }
+.pull-down{ width: 1.2962963rem/* 70px */;
+	height: 1rem/* 54px */; 
+	margin: .66666667rem/* 36px */ auto;
+}
 .mid_1 img{
 	width: .62962963rem/* 34px */;
 	height: .33333333rem/* 18px */;
-	margin: .66666667rem/* 36px */ auto;
+	margin: .33333333rem/* 18px */ auto;
 	display: block;
-	padding-bottom: .37037037rem/* 20px */;
 }
 .mid_2{
 	width: 20rem/* 1080px */;
