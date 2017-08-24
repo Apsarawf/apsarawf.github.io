@@ -1,0 +1,563 @@
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td {
+	margin:0;
+	padding:0; 
+}
+li{
+	list-style: none;
+}
+img{
+	border:0;
+}
+body::-webkit-scrollbar {
+    display:none
+}
+body{
+	display: flex;
+	flex-direction:column;
+	/*background:url(http://ogmx88yf3.bkt.clouddn.com/image/1/a4/aab9b8f1b4d6b6e6dc18a2b4231b5.jpg?imageMogr2/interlace/1) no-repeat;
+	background-size: 100% 964px;*/
+	background-color: #5ff0e2;
+
+}
+/*===要改的===*/
+.main{
+	width: 100%;
+	position: absolute;
+	top:100vh;
+	display: none;
+	min-width: 1100px;
+	z-index: -1;
+}
+.top{
+	display: block;
+	top:66px;
+}
+
+.title{
+	width:100%;
+	height:64px;
+	background-color: #000;
+	min-width: 1100px;
+}
+.left:hover{
+	cursor: pointer;
+}
+.left{
+	float: left;
+}
+.left p{
+	float: left;
+	color:#999;
+	font-size: 20px;
+	line-height: 64px;
+	margin-right:20px;
+}
+.left img{
+	width:50px;
+	height:50px;
+	margin:7px 0 0 20px;
+}
+.right{
+	position: absolute;
+	width:600px;
+	height: 64px;
+	left:35%;
+	position: relative;
+	display: none;
+}
+.right li{
+	margin-top:2px;
+	text-align: center;
+	line-height: 60px;
+	width:60px;
+	height: 60px;
+	border-radius: 30px;
+	background-color: #ccc;
+	box-shadow: 0 0 10px #fff;
+	color: #fff;
+	top:0;
+	left: 270px;
+	position: absolute;
+}
+.right li:hover{
+	cursor: pointer;
+}
+.nav{
+	display: flex;
+	justify-content:space-around;
+}
+.nav-con:hover{
+	cursor: pointer;
+}
+.nav div{
+	float:left;
+	width:200px;
+	height:400px;
+	text-align: center;
+	position: relative;
+}
+.nav p{
+	margin:0 auto;
+	font-size: 32px;
+	font-family: '隶书';
+	font-weight: bold;
+}
+.line{
+	width:1px;
+	margin:0 auto;
+	background-color: #fff;
+}
+.intro .line{
+	height:360px;
+}
+.intro .nav-con{
+	width:150px;
+	border-radius: 50%;
+	background-color: #fff;
+	line-height: 150px;
+}
+
+
+.part .line{
+	height:200px;
+}
+.part .nav-con{
+	width:150px;
+	line-height: 150px;
+	border-radius: 50%;
+	background-color: #fff;
+}
+
+.opus .line{
+	height:360px;
+}
+.opus .nav-con{
+	width:180px;
+	line-height: 180px;
+	border-radius: 50%;
+	background-color: #fff;
+}
+
+.prize .line{
+	height:200px;
+}
+.prize .nav-con{
+	width:130px;
+	line-height: 130px;
+	border-radius: 50%;
+	background-color: #fff;
+}
+
+.join1 .line{
+	height:300px;
+}
+.join1 .nav-con{
+	width:150px;
+	line-height: 150px;
+	border-radius: 50%;
+	background-color: #fff;
+}
+
+.other{
+	width:400px;
+	margin:200px auto 0 auto;
+	position: relative;
+}
+.center{
+	width:400px;
+	height:300px;
+	text-align: center;
+}
+.center .cen-title{
+	font-size: 60px;
+	color:#fff;
+}
+.cen-time{
+	color:#fff;
+	font-size: 20px
+}
+.cen-line{
+	height: 1px;
+	background-color: #fff;
+	width:200px;
+	margin:5px auto;
+}
+.cen-zong{
+	color:#fff;
+	font-size: 20px;
+}
+
+#tail{
+	position: absolute;
+	bottom: 0;
+	width:300px;
+	height:74px;
+	left:45px;
+	text-align: center;
+	color:#fff;
+	z-index: 1;
+}
+#tail:hover{
+	cursor: pointer;
+}
+
+#tail p img{
+	width:30px;
+	height:30px;
+}
+#down{
+	width:34px;
+	height:20px;
+	left:134px;
+	position: absolute;
+	top:-36px;
+}
+#tail p span,.contact{
+	font-size: 16px;
+	margin-bottom: 12px;
+}
+#bot-line{
+	height: 6px;
+	width:200px;
+	margin:0 auto;
+	background-color: #F9991C;
+	position: absolute;
+	bottom:0;
+	left:50px;
+	z-index: -1;
+}
+
+.conta{
+	width:100%;
+	height: 500px;
+	background-color: #fff;
+	position: absolute;
+	bottom:-500px;
+	display: none;
+}
+
+.box1{
+	width:300px;
+	margin:50px auto 0 auto;
+	border:1px solid #ccc;
+	padding:40px;
+}
+.box1 a{
+	text-decoration:none;
+	color:#F9991C;
+}
+.one{
+	font-size: 30px;
+}
+.name{
+	font-size: 20px;
+}
+.box1 >p{
+	margin-top:50px;
+}
+
+/*==要改的==*/
+#brief{
+	
+}
+
+#brief{
+	position: absolute;
+	top:100vh;
+	display: none;
+	width:700px;
+	height:700px;
+	margin:0 auto;
+	text-align: center;
+	position: relative;
+	margin-top: 50px;
+	z-index: -1;
+}
+.brief-one img{
+	width:150px;
+	height:150px;
+	position: absolute;
+	top:0px;
+	left: 275px;
+}
+.brief-line{
+	height: 1px;
+	width:200px;
+	background-color: #fff;
+	margin:400px auto 30px auto;
+}
+#brief-name1{
+	color:#fff;
+	font-size: 40px;
+	opacity: 0;
+}
+.brief-name2{
+	color:#fff;
+	font-size: 20px;
+	opacity: 0;
+}
+.brief-two{
+	position: absolute;
+	width:640px;
+	height:640px;
+	border:1px solid #fff;
+	z-index: 2;
+	top:0;
+	background-color: #fff;
+	padding:30px;
+	border-radius: 50px;
+	opacity: 0;
+}
+.bri-line{
+	width: 640px;
+	height:2px;
+	background-color: #999;
+	margin:20px 0;
+}
+
+
+.group{
+	position: relative;
+	width:900px;
+	height: 700px;
+	top:0;
+	margin:50px auto 0 auto;
+}
+
+
+.group li:hover{
+	background-color: rgba(0,0,0,0);
+	cursor: pointer;
+}
+.group ul{
+	width:900px;
+	height:66px;
+}
+.group li{
+	float: left;
+	width: 150px;
+	text-align: center;
+	padding:20px 0;
+	color:#fff;
+}
+
+
+.color{
+	position: absolute;
+	top:0;
+	left:0;
+	height:66px;
+	width:150px;
+	background-color:#fd570c;
+	z-index: -1;
+	border-radius: 10px 10px 0 0;
+}
+.group-main{
+	background-color: #fff;
+	height: 530px;
+	width:700px;
+	border-radius: 0 0 20px 20px;
+	color:;
+	padding:50px 100px;
+	position: absolute;
+	top:600px;
+	left:0;
+	opacity: 0;
+	transition: 2s ease;
+	
+	box-shadow: 0 0 100px #999;
+}
+.group1{
+	opacity: 1;
+	top:60px;
+	transform: rotate(360deg);
+}
+/*============*/
+.excel-box li{list-style: none;}
+.state1{ color: red; }
+.state2{ color: green; }
+.excel-box{
+	margin: 50px auto;
+	width: 800px;
+	height: 600px;
+	background: #fff;
+	border-radius: 15px;
+}
+.join{
+	float: left;
+	height: 600px;
+	width: 280px;
+}
+.join img{
+	width: 200px;height: 200px;
+	display: block;
+	margin-left: 40px;
+	margin-top: 100px;
+}
+.join span{
+	margin-top: 30px;
+	font-size: 50px;
+	font-family: "仿宋";
+	color: #37e2d0;
+	text-align: center;
+	display: block;
+	font-weight: bold;
+}
+.join p{
+	margin-top: 20px;
+	font-size: 40px;
+	font-family: "宋体";
+	color: #fecc2f;
+	text-align: center;
+	font-weight: bold;
+}
+.excel{
+	float: right;
+	width: 500px;
+	height: 600px;
+}
+.excel h3{
+	display: block;
+	font-size: 24px;
+	font-family: "黑体";
+	border-bottom: 1px solid #000;
+	width: 400px;
+	text-align: center;
+	margin: 10px auto;
+}
+.excel span{
+	font-size: 12px;
+	font-family: "宋体";
+}
+.excel li {
+	margin-top: 30px;
+	margin-left: 80px;
+}
+.excel-box input{
+	border: 1px solid #5f5f5f;
+	border-radius: 5px;
+	cursor: auto;
+	color: #BDBCBC;
+}
+.input_1{
+	width: 300px;
+	height: 30px;
+	margin-right: 10px;
+}
+.input_2{
+	width: 120px;
+	height: 30px;
+}
+#nianji{
+	height: 30px;
+	color: #000;
+	width: 70px;
+	border-radius: 5px;
+}
+.input_3,.input_5{
+	width: 300px;
+	height: 80px;
+	border-radius: 5px;
+	cursor: auto;
+	color: #BDBCBC;
+}
+#input_4{
+	width: 300px;
+	height: 40px;
+	background: #fff;
+	line-height: 40px;
+	font-size: 20px;
+	cursor: pointer;
+	color: #000;
+}
+/*===========*/
+.work{
+	width:800px;
+	height: 600px;
+	margin:50px auto;
+}
+.work h2{
+	width:800px;
+	text-align: center;
+	height: 50px;
+	line-height: 50px;
+	color:#fff;
+}
+.work >div{
+	float:left;
+}
+.work-left,.work-right{
+	width:180px;
+	height: 550px;
+}
+.work-center{
+	width:300px;
+	height:530px;
+	margin:0 66px;
+	margin-top:20px;
+}
+.content1,.content2,.content3,.content4{
+	width:300px;
+	height:550px;
+	opacity: 0;
+	display: none;
+	padding:20px;
+	color:#fff;
+	text-align: center;
+}
+h5{
+	font-size: 30px;
+	margin-bottom: 20px;
+}
+.content1{
+	display: block;
+	opacity: 1;
+}
+.work img{
+	width:180px;
+	height:70px;
+	margin: 100px 0;
+	cursor: pointer;
+}
+/*========*/
+.box2{
+	width: 100%;
+	margin: 114px auto;
+}
+.box2 p,h4{
+	text-align: center;
+	color: #fff;
+	font-size: 26px;
+	line-height: 36px;
+	font-family: "微软雅黑";
+}
+.box2 p{display: none;}
+.wall{
+	width: 70%;
+	margin: 0 auto;
+	position: relative;
+}
+.wall li{
+	position: absolute;
+	cursor: pointer;
+}
+.wall li p{
+	font-size: 10px;
+	border: 1px solid #000;
+	display: none;
+}
+.wall img{
+	display: block;
+	border: 5px solid #5f5f5f;
+	width: 150px;
+	height:112px;
+	transition:width 2s, height 2s;
+-moz-transition:width 2s, height 2s, -moz-transform 2s; /* Firefox 4 */
+-webkit-transition:width 2s, height 2s, -webkit-transform 2s; /* Safari and Chrome */
+-o-transition:width 2s, height 2s, -o-transform 2s; /* Opera */
+	transition: 1s ease;
+}
+.wall img:hover{
+	width: 330px;
+	height: 246px;
+}

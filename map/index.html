@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+     * {
+       padding: 0;
+       margin: 0;
+       font-family: "Micrsoft Yahei";
+     }
+    html,body,#container {
+      width: 100%;
+      height: 100%;
+    }
+    #search {
+           position: fixed;
+           left: 10px;
+           top: 10px;
+           z-index: 99;
+           font-size: 16px;
+    }
+    #text {
+      width: 100%;
+      height: 44px;
+    }
+    #btn {
+      width:28%;
+      height: 44px;
+    }
+  </style>
+  <script src="jquery-3.2.1.min.js"></script>
+  <script charset="utf-8" src="http://map.qq.com/api/js?v=2.exp&key=YZBBZ-NXICG-YRGQL-IAK6W-2U3DJ-AHFUG"></script>
+</head>
+<body>
+<div id="search">
+  <input type="text" value="广东省深圳市大运地铁站" id="text">
+    <input type="button" value="搜索" id="btn">
+</div>
+
+<div id="container"></div>
+  <script>
+        //封装函数
+        //address:输入的地址（广东省深圳市大运地铁站）;
+        //id:地图渲染的容器;
+        //key:你的秘钥;
+      function getAddress(address,id,key){
+        $.ajax({
+      type:'get',
+      url:'http://apis.map.qq.com/ws/geocoder/v1/?address='+address+'&key='+key+'&output=jsonp',
+      dataType:'jsonp',
+      jsonp:'callback',
+      success:function(data) {
+                var posi=data.result.location;
+          console.log(posi);
+          var center = new qq.maps.LatLng(posi.lat,posi.lng);
+          var map = new qq.maps.Map(id,{
+              center: center,
+              zoom: 16
+          });
+          //创建marker
+          var marker = new qq.maps.Marker({
+              position: center,
+              map: map
+          });
+      },
+      error:function() {
+          alert('fail');
+      }
+
+      });
+     }
+     //点击事件
+     var div1=document.getElementById('container');
+     $('#btn').on('click',function() {
+          //调用函数
+            getAddress($('#text').val(),div1,'YZBBZ-NXICG-YRGQL-IAK6W-2U3DJ-AHFUG');
+     });
+     //异步加载
+     window.onload=function() {
+       $('#btn').trigger('click');
+     }
+     
+  </script>
+</body>
+</html>
